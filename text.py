@@ -5,7 +5,7 @@ def revword(word:str):
         return word
 
 
-def countword (file):
+def countword ():
     for line in file:
         line=line.strip("\n")
         leadword=line
@@ -21,3 +21,4 @@ def countword (file):
             if  revword(j)==leadword :
                 counter=counter+1              
     return counter    
+
