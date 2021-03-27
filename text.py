@@ -1,8 +1,8 @@
 file = open("C:/Users/tuvs2/Desktop/pythonprograms/matala2/text.txt") 
 def revword(word:str):
-        newword=word[::-1]
-        newword=newword.lower()
-        return newword
+        word=word[::-1]
+        word=word.lower()
+        return word
 
 
 def countword (file):
@@ -14,12 +14,10 @@ def countword (file):
     counter=1
     for line in file:
         line = line.strip("\n")
-        if line==leadword:
-	continue
+        if line==leadword: continue
         words = line.split()
         for j in words:
             revword(j)
             if  revword(j)==leadword :
                 counter=counter+1              
-    return counter    
-
+    return counter   
