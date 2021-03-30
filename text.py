@@ -1,4 +1,3 @@
-file = open("C:/Users/tuvs2/Desktop/pythonprograms/matala2/test.txt") 
 def revword(word:str):
         word=word[::-1]
         word=word.lower()
@@ -6,6 +5,7 @@ def revword(word:str):
 
 
 def countword ():
+    file = open("text.txt") 
     for line in file:
         line=line.strip("\n")
         leadword=line
